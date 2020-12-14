@@ -10,9 +10,17 @@
     <body>
         <main class="container">
             <h1>Churrascômetro</h1>
-            <input id="adults" name="adults" type="number" placeholder="Adultos" >
-            <input id="kids" name="kids" type="number" placeholder="Crianças" >
-            <input id="duration" name="duration" type="number" placeholder="Duração (h)">
+            <input class="numberInput" id="men" name="men" type="number" placeholder="Homens" >
+            <input class="numberInput" id="women" name="women" type="number" placeholder="Mulheres" >
+            <input class="numberInput" id="kids" name="kids" type="number" placeholder="Crianças" >
+            <input class="numberInput" id="duration" name="duration" type="number" placeholder="Duração (h)">
+            <p>Selecione os tipos de carne:</p>
+            <input id="beef" type="checkbox" name="meat">
+            <label for="beef">Carne</label>
+            <input id="chicken" type="checkbox" name="meat">
+            <label for="chicken">Frango</label>
+            <input id="pork" type="checkbox" name="meat">
+            <label for="pork">Porco</label>
             <button onclick="calculate()">Calcular</button>
             
             <section id="result">

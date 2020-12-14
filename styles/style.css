@@ -11,10 +11,17 @@ h1 {
     text-align: center;
 }
 
-input {
+.numberInput {
     width: 100%;
     box-sizing: border-box;
     display: block;
     margin-bottom: 10px;
     padding: 5px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    padding: 2px;
 }
