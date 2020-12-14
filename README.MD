@@ -1,3 +1,3 @@
-#About
+### About
 
-This repository contains all the projects developed by me in ProgramadorBR's fullstack development course
+This project calculates the amount of meat, beer and bottles of soda / water you would need for a barbecue.
