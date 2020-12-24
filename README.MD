@@ -1,4 +1,4 @@
 ### About
-This repository contains all the projects developed by me in ProgramadorBR's fullstack development course.
+This is a Match Match game made to teste my skills at html, css, js.
 
-The projects are separated into branches because i prefer it that way.
+I've learn a lot about how to manipulate arrays, objects, functions and the DOM.
