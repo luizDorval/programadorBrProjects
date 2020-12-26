@@ -45,6 +45,9 @@ body {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 img {

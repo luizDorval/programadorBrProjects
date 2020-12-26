@@ -21,6 +21,10 @@ function initializeCards() {
         cardElement.classList.add(CARD)
         cardElement.dataset.icon = card.icon
         createCardContent(card, cardElement)
+        cardElement.classList.add('flip')
+        setTimeout(() => {
+            cardElement.classList.remove('flip')
+        }, 2000)
         cardElement.addEventListener('click', flipCard)
         gameBoard.appendChild(cardElement)
     })
