@@ -44,10 +44,16 @@ body {
     -o-border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
+    -webkit-backface-visibility: hidden;
+    /*The code bellow make backface visibility works on firefox*/
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
 }
 
 img {

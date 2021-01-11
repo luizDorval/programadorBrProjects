@@ -77,6 +77,8 @@ function countPlay() {
     PLAYS.children[0].innerHTML = plays.toString()
 }
 function restart() {
+    plays = 0
+    PLAYS.children[0].innerHTML = plays.toString()
     game.clearCards()
     startGame()
     GAMEOVER.style.display = 'none'
