@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+}
+
+h1 {
+    font-size: 7vw;
+    width: 100%;
+    text-align: center;
+    font-family: 'Audiowide', sans-serif;
+}
+
+h2 {
+    font-family: 'Fira Code';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+section {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #1d1e20;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#section2 {
+    background-color: #dddddd;
+}
+
+section textarea {
+    color: black;
+    resize: none;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 800px) {
+    h1 {
+        font-size: 4vw;
+    }
+}
+
+span {
+    align-self: flex-start;
+    width: 20%;
+}
+
+/* BUTTONS */
+.copyButton {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+img {
+    width: 100%;
+}
