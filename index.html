@@ -15,7 +15,12 @@
 </head>
 
 <body>
-    <main>
+    <section id="loginSect" style="height: 100vh; display: flex; flex-direction: column; justify-content: space-around;">
+        <h1>LOGIN</h1>
+        <input id="name" style="width: 20%; height: 5%; font-size: 2rem;" placeholder="Nome" type="text">
+        <input id="passwd" oninput="login()" style="width: 20%; height: 5%; font-size: 2rem;" placeholder="Senha" type="password">
+    </section>
+    <main style="display: none;">
         <h1>4 Elementos Criptografador Foda</h1>
         <section id="section1">
             <textarea id="encode" cols="25" rows="5" placeholder="Escreve o texto pra codificar ai o corno"
@@ -42,6 +47,7 @@
         <img src="pp.jpeg" style="width: 80%; margin: 0 auto;" alt="">
     </main>
     <script src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/login.js"></script>
 </body>
 
 </html>
