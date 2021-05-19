@@ -1,6 +1,5 @@
 const copy = (textArea) => {
     navigator.clipboard.writeText(btoa(document.querySelector('#' + textArea).value)).then(() => {
-        alert('Sucesso')
     }).catch((error) => {
         alert('Erro: ' + error)
     });
@@ -9,7 +8,7 @@ const copy = (textArea) => {
 
 const paste = (textArea) => {
     navigator.clipboard.readText().then((text) => {
-        document.querySelector('#' + textArea).value = atob(text);
+        document.querySelector('#' + textArea).value = text;
         decode()
     }).catch((error) => {
         alert('Erro: ' + error)
@@ -165,7 +164,7 @@ const encodeCrypto = (array) => {
     return array.join("")
 }
 const decode = () => {
-    let value = document.getElementById('decode').value
+    let value = atob(document.getElementById('decode').value)
     const toArray = value.split("")
     value = decodeCrypto(toArray)
     document.getElementById('decodeResult').innerHTML = value
@@ -311,5 +310,5 @@ const decodeCrypto = (array) => {
             }
         }
     }
-    return atob(array.join(""))
+    return array.join("")
 }
