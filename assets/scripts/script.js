@@ -1,5 +1,5 @@
 const copy = (textArea) => {
-    navigator.clipboard.writeText(document.querySelector('#' + textArea).value).then(() => {
+    navigator.clipboard.writeText(btoa(document.querySelector('#' + textArea).value)).then(() => {
         alert('Sucesso')
     }).catch((error) => {
         alert('Erro: ' + error)
@@ -9,7 +9,7 @@ const copy = (textArea) => {
 
 const paste = (textArea) => {
     navigator.clipboard.readText().then((text) => {
-        document.querySelector('#' + textArea).value = text;
+        document.querySelector('#' + textArea).value = atob(text);
         decode()
     }).catch((error) => {
         alert('Erro: ' + error)
