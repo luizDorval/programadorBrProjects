@@ -1,5 +1,6 @@
 const copy = (textArea) => {
     navigator.clipboard.writeText(btoa(document.querySelector('#' + textArea).value)).then(() => {
+        encode()
     }).catch((error) => {
         alert('Erro: ' + error)
     });
