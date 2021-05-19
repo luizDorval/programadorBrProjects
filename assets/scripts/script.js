@@ -311,5 +311,5 @@ const decodeCrypto = (array) => {
             }
         }
     }
-    return array.join("")
+    return atob(array.join(""))
 }
