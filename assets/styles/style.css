@@ -5,6 +5,12 @@
     font-family: arial, sans-serif;
 }
 
+#loginSect {
+    color: white;
+    animation: animate-login-sect 700ms;
+}
+
+
 h1 {
     font-size: 7vw;
     width: 100%;
@@ -21,7 +27,8 @@ main {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-}
+    -webkit-animation: animate-div 850ms;
+    }
 
 section {
     width: 100%;
@@ -72,4 +79,14 @@ span {
 
 img {
     width: 100%;
+}
+
+@-webkit-keyframes animate-div {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+
+@-webkit-keyframes animate-login-sect {
+    0% { height: 100vh;}
+    100% { height: 0vh;}
 }
