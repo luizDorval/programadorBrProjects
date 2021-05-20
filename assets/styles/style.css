@@ -75,10 +75,36 @@ span {
     padding: 5px;
     border: none;
     background-color: transparent;
+    border-radius: 0.765rem;
 }
 
 img {
     width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+    section {
+        width: 80%;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        justify-content: space-around;
+        padding: 15px;
+        background-color: #1d1e20;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+    /* BUTTONS */
+    .copyButton {
+        width: 25%;
+        padding: 5px;
+        border: none;
+        background-color: transparent;
+    }
 }
 
 @-webkit-keyframes animate-div {
